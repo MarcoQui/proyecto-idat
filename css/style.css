@@ -1,0 +1,251 @@
+:root{
+    --primary: #9c27b0;
+    --darkPrimary: #89119d;
+    --secondary: #ffce00;
+    --darkSecondary: rgb(233, 287, 2);
+    --white: #fff;
+    --black: #000;
+
+    --primaryfont: 'Staatliches', cursive;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--white);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3{
+    text-align: center;
+    font-family: var(--primaryfont);
+    color: var(--black);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+img{
+    width: 100%;
+}
+
+/*header*/
+.header{
+    background-image: url(../imagenes/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__banner{
+    width: 100%;
+    position: relative;
+}
+.header__menu{
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+.header__menu:hover{
+    background-color: #00000080;
+    transition: 1s;
+}
+.header__logolargo{
+    width: 100%;
+}
+.header__logolargo img{
+    width: 45%;
+    margin-left: 25%;
+    margin-top: 30rem;
+}
+
+.menu__logo{
+    width: 8rem;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu__logo img{
+    width: 8rem;
+}
+.menu__items{
+    display: flex;
+    font-weight: bold;
+    width: 50%;
+    align-items: center;
+}
+.menu__items a{
+    color: var(--white);
+    margin-right: 3rem;
+    font-family: var(--primaryfont);
+}
+.menu__items a:hover{
+    border-bottom: 3px solid black;
+    transition-duration: 1s;
+}
+.menu__usuario{
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu__usuario input{
+    width: 20rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: .5rem solid black;
+}
+.menu__usuario input:hover{
+    border-color: var(--white);
+    transition: 0.7s;
+    color: white;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+.menu__usuario input::placeholder{
+    padding-left: 1rem;
+    color: #fff;
+}
+.menu__usuario img{
+    width: 4rem;
+}
+.menu__usuario img:hover{
+    filter: invert();
+    transition: 0.7s;
+}
+/* main */
+.content{
+    max-width: 140rem;
+    margin: 4rem auto;
+}
+.shadow{
+    box-shadow: 0px 5px 15px 0px;
+    background-color: var(--white);
+    padding: 2rem;
+}
+.content h1{
+    margin: 4rem 0;
+}
+.content p{
+    line-height: 2;
+    text-align: justify;
+    margin: 0 6rem 4rem;
+}
+.content__img{
+    display: flex;
+    justify-content: center;
+}
+.content img{
+    width: 70%;
+    border-radius: 10rem 0 10rem 0;
+}
+.content__story{
+    max-width: 140rem;
+    margin: 4rem auto;
+}
+.content__story h1{
+    margin: 4rem 0;
+}
+.story__ropa{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    text-align: center;
+}
+.ropa a{
+    font-family: var(--primaryfont);
+    font-size: 3rem;
+    color: var(--white);
+    background-color: rgb(81, 15, 38);
+    padding: .6rem 3rem;
+    border-radius: 5rem;
+}
+.ropa a:hover{
+    background-color: #fff;
+    color: rgb(81, 15, 38);
+    transition: 1s;
+}
+.ropa img{
+    border-radius: 3rem;
+    height: 35rem;
+    margin: 0;
+    padding: 0;
+}
+.ropa img:hover{
+    background-color: #00000040;
+}
+.contactanos{
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+}
+.contactanos iframe{
+    width: 100%;
+    height: 100%;
+}
+.contactanos__form{
+    margin: 0 5rem;
+    height: 100%;
+}
+.contactanos__form label{
+    display: flex;
+    flex-direction: column;
+}
+.contactanos__form label span{
+    font-family: var(--primaryfont);
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.complet{
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: transparent;
+}
+textarea{
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2px solid black;
+}
+.enviar{
+    border: 0px;
+    height: 5rem;
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: var(--primaryfont);
+}
+.contactanos__redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactanos__redes img{
+    border-radius: 0;
+}
